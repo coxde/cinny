@@ -55,6 +55,10 @@ class RoomList extends EventEmitter {
     return [...this.directs];
   }
 
+  getAll() {
+    return [...this.spaces].concat([...this.rooms]);
+  }
+
   isOrphan(roomId) {
     return !this.roomIdToParents.has(roomId);
   }

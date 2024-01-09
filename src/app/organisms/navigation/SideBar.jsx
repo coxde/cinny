@@ -112,10 +112,10 @@ function FeaturedTab() {
   useNotificationUpdate();
 
   function getHomeNoti() {
-    const orphans = roomList.getOrphans();
+    const all = roomList.getAll();
     let noti = null;
 
-    orphans.forEach((roomId) => {
+    all.forEach((roomId) => {
       if (accountData.spaceShortcut.has(roomId)) return;
       if (!notifications.hasNoti(roomId)) return;
       if (noti === null) noti = { total: 0, highlight: 0 };

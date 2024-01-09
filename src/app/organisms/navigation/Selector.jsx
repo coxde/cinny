@@ -27,6 +27,7 @@ function Selector({
 
   let imageSrc = room.getAvatarFallbackMember()?.getAvatarUrl(mx.baseUrl, 24, 24, 'crop') || null;
   if (imageSrc === null) imageSrc = room.getAvatarUrl(mx.baseUrl, 24, 24, 'crop') || null;
+  let imageSrcRoom = room.getAvatarUrl(mx.baseUrl, 24, 24, 'crop') || null;
 
   const isMuted = noti.getNotiType(roomId) === cons.notifs.MUTE;
 
@@ -57,8 +58,8 @@ function Selector({
       key={roomId}
       name={room.name}
       roomId={roomId}
-      imageSrc={isDM ? imageSrc : null}
-      iconSrc={isDM ? null : joinRuleToIconSrc(room.getJoinRule(), room.isSpaceRoom())}
+      imageSrc={isDM ? imageSrc : imageSrcRoom}
+      iconSrc={null}
       isSelected={navigation.selectedRoomId === roomId}
       isMuted={isMuted}
       isUnread={!isMuted && noti.hasNoti(roomId)}

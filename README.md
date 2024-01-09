@@ -7,7 +7,7 @@
 - [x] Unified home section (Show all rooms and DMs in Home)
   - [x] Fix navigation
   - [x] Fix notification
-- [ ] Show avatars for rooms too
+- [x] Show avatars for rooms too
 - [ ] Sort rooms by activities
 - [ ] Collapse rooms and DMs
 

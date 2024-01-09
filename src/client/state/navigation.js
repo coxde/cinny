@@ -295,7 +295,6 @@ class Navigation extends EventEmitter {
         this._selectSpace(action.roomId, false);
       },
       [cons.actions.navigation.SELECT_ROOM]: () => {
-        if (action.roomId) this._selectTabWithRoom(action.roomId);
         this._selectRoom(action.roomId, action.eventId);
       },
       [cons.actions.navigation.OPEN_SPACE_SETTINGS]: () => {

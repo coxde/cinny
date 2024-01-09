@@ -8,7 +8,7 @@
   - [x] Fix navigation
   - [x] Fix notification
 - [x] Show avatars for rooms too
-- [ ] Sort rooms by activities
+- [x] Sort rooms by activities
 - [ ] Collapse rooms and DMs
 
 ---

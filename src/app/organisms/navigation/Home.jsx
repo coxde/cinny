@@ -73,7 +73,7 @@ function Home({ spaceId }) {
       )}
 
       { roomIds.length !== 0 && (
-        <RoomsCategory name="Rooms" roomIds={roomIds.sort(roomIdByAtoZ)} drawerPostie={drawerPostie} />
+        <RoomsCategory name="Rooms" roomIds={roomIds.sort(roomIdByActivity)} drawerPostie={drawerPostie} />
       )}
 
       { directIds.length !== 0 && (

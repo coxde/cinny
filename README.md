@@ -1,4 +1,18 @@
-# Cinny
+# Cinny-Fork
+
+## A rough fork with few modifications
+
+### To-do List
+
+- [x] Unified home section (Show all rooms and DMs in Home)
+  - [x] Fix navigation
+  - [ ] Fix notification
+- [ ] Show avatars for rooms too
+- [ ] Sort rooms by activities
+- [ ] Collapse rooms and DMs
+
+---
+
 <p>
     <a href="https://github.com/ajbura/cinny/releases">
         <img alt="GitHub release downloads" src="https://img.shields.io/github/downloads/ajbura/cinny/total?logo=github&style=social"></a>

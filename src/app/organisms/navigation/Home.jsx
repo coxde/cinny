@@ -30,8 +30,8 @@ function Home({ spaceId }) {
     roomIds = spaceChildIds.filter((roomId) => rooms.has(roomId));
     directIds = spaceChildIds.filter((roomId) => directs.has(roomId));
   } else {
-    spaceIds = roomList.getOrphanSpaces().filter((id) => !accountData.spaceShortcut.has(id));
-    roomIds = roomList.getOrphanRooms();
+    roomIds = roomList.getAllRooms();
+    directIds = roomList.getAllDirects();
   }
 
   if (isCategorized) {

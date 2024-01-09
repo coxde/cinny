@@ -47,6 +47,14 @@ class RoomList extends EventEmitter {
     appDispatcher.register(this.roomActions.bind(this));
   }
 
+  getAllRooms() {
+    return [...this.rooms];
+  }
+
+  getAllDirects() {
+    return [...this.directs];
+  }
+
   isOrphan(roomId) {
     return !this.roomIdToParents.has(roomId);
   }

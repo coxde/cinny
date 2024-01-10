@@ -2,6 +2,11 @@
 
 ## A rough fork with few modifications
 
+Docker image from [ghcr](https://github.com/coxde/cinny/pkgs/container/cinny) by:
+```
+docker pull ghcr.io/coxde/cinny:latest
+```
+
 ### To-do List
 
 - [x] Unified home section (Show all rooms and DMs in Home)
